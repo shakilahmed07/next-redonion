@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .menuItem {
+    @apply border-b-4 cursor-pointer pb-2 border-transparent hover:border-red-600;
+  }
+}

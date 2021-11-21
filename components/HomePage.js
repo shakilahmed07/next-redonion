@@ -1,5 +1,7 @@
 import React from "react";
+import MenuItems from "./MenuItems";
 import Navbar from "./Navbar";
+import ServiceItems from "./ServiceItems";
 
 const HomePage = () => {
   return (
@@ -26,6 +28,11 @@ const HomePage = () => {
           </button>
         </form>
       </div>
+
+      {/* Restaurant Menu Items */}
+      <MenuItems />
+      {/* Restaurant Services Items */}
+      <ServiceItems />
     </>
   );
 };
