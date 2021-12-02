@@ -1,5 +1,6 @@
 import React from "react";
 import MenuItem from "./MenuItem";
+import lunch from "../data/lunch";
 
 const MenuItems = () => {
   return (
@@ -12,12 +13,16 @@ const MenuItems = () => {
 
       {/* Menu Item */}
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 mb-5 px-20">
-        <MenuItem />
-        <MenuItem />
-        <MenuItem />
-        <MenuItem />
-        <MenuItem />
-        <MenuItem />
+        {lunch.map((item) => (
+          <MenuItem
+            id={item.id}
+            key={item.id}
+            image={item.image}
+            title={item.title}
+            description={item.description}
+            price={item.price}
+          />
+        ))}
       </div>
       <div className="flex flex-col items-center justify-center py-5">
         <button

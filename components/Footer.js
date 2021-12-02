@@ -1,12 +1,22 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import logo from "../public/logo.png";
 
 const Footer = () => {
   return (
     <footer className="px-20 bg-[rgb(25,25,25)]  text-white py-8">
       <div className="md:flex md:justify-between">
-        <Image src={logo} height={100} width={100} objectFit="contain" />
+        <Link href="/">
+          <Image
+            src={logo}
+            height={100}
+            width={100}
+            objectFit="contain"
+            className="cursor-pointer"
+          />
+        </Link>
+
         <div className="text-sm space-y-1 text-gray-400 mb-5 md:mb-0">
           <p>About Online food</p>
           <p>Read our blog</p>
