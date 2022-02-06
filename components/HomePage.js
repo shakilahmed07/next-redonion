@@ -1,12 +1,10 @@
 import React from "react";
 import MenuItems from "./MenuItems";
-import Navbar from "./Navbar";
 import ServiceItems from "./ServiceItems";
 
 const HomePage = () => {
   return (
     <>
-      <Navbar />
       {/* Red Onion Banner */}
       <div
         className={`bg-header-banner bg-[#FCF4E0] h-[450px] bg-contain bg-center flex flex-col items-center justify-center bg-no-repeat`}

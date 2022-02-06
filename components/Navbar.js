@@ -21,7 +21,7 @@ const Navbar = () => {
         </Link>
 
         <div className="flex space-x-4 items-center">
-          <Link href="/checkout">
+          <Link href="/cart">
             <ShoppingCartIcon className="h-5 cursor-pointer" />
           </Link>
 

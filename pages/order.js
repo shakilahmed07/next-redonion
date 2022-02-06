@@ -1,11 +1,8 @@
 import React from "react";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
 
 const Order = () => {
   return (
     <>
-      <Navbar />
       {/* Order Complete */}
       <div className="h-screen">
         <div>{/* map image */}</div>
@@ -33,7 +30,6 @@ const Order = () => {
           <button>Contact</button>
         </div>
       </div>
-      <Footer />
     </>
   );
 };

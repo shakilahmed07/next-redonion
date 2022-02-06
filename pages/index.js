@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Footer from "../components/Footer";
 import HomePage from "../components/HomePage";
 
 export default function Home() {
@@ -9,11 +8,7 @@ export default function Home() {
         <title>Red Onion</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      {/* Home Page */}
       <HomePage />
-      {/* Footer */}
-      <Footer />
     </div>
   );
 }
