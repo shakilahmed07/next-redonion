@@ -2,7 +2,7 @@ import React from "react";
 import MenuItem from "./MenuItem";
 import lunch from "../data/lunch";
 
-const MenuItems = () => {
+const MenuItems = ({ menuItems }) => {
   return (
     <div className="py-10 bg-gray-50">
       <div className="flex space-x-4 items-center justify-center font-semibold">
@@ -13,14 +13,14 @@ const MenuItems = () => {
 
       {/* Menu Item */}
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 mb-5 px-20">
-        {lunch.map((item) => (
+        {menuItems.map((item) => (
           <MenuItem
-            id={item.id}
-            key={item.id}
-            image={item.image}
+            id={item._id}
+            key={item._id}
+            image={item.img}
             title={item.title}
-            description={item.description}
-            price={item.price}
+            description={item.desc}
+            price={item.prices}
           />
         ))}
       </div>

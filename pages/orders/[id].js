@@ -1,7 +1,9 @@
+import axios from "axios";
 import React from "react";
 import styles from "../../styles/Order.module.css";
 
-const Order = () => {
+const Order = ({ order }) => {
+  console.log("order api", order);
   const status = 0;
   const statusClass = (index) => {
     if (index - status < 1) return styles.done;
@@ -24,10 +26,10 @@ const Order = () => {
         <tbody>
           <tr className="">
             <td>
-              <span>12324687</span>
+              <span>{order._id}</span>
             </td>
             <td>
-              <span>john doe</span>
+              <span>{order.customer}</span>
             </td>
             <td>
               <span>savar 24/B</span>
@@ -107,6 +109,19 @@ const Order = () => {
       </div>
     </div>
   );
+};
+
+// This gets only single called request
+export const getServerSideProps = async ({ params }) => {
+  // Fetch data from external API
+  const res = await axios.get(`http://localhost:3000/api/orders/${params.id}`);
+
+  // Pass data to the page via props
+  return {
+    props: {
+      order: res.data,
+    },
+  };
 };
 
 export default Order;

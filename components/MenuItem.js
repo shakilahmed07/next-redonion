@@ -8,7 +8,7 @@ const MenuItem = ({ image, title, description, price, id }) => {
         <img src={image} height={150} width={150} alt={title} loading="lazy" />
         <p className="font-semibold text-lg">{title}</p>
         <p className="text-xs text-gray-500">{description}</p>
-        <p className="font-semibold text-md">${price}</p>
+        <p className="font-semibold text-md">${price[0]}</p>
       </div>
     </Link>
   );

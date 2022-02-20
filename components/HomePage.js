@@ -2,7 +2,7 @@ import React from "react";
 import MenuItems from "./MenuItems";
 import ServiceItems from "./ServiceItems";
 
-const HomePage = () => {
+export default function HomePage({ menuItems }) {
   return (
     <>
       {/* Red Onion Banner */}
@@ -28,11 +28,9 @@ const HomePage = () => {
       </div>
 
       {/* Restaurant Menu Items */}
-      <MenuItems />
+      <MenuItems menuItems={menuItems} />
       {/* Restaurant Services Items */}
       <ServiceItems />
     </>
   );
-};
-
-export default HomePage;
+}
