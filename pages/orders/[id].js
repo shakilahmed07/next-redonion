@@ -3,7 +3,6 @@ import React from "react";
 import styles from "../../styles/Order.module.css";
 
 const Order = ({ order }) => {
-  console.log("order api", order);
   const status = 0;
   const statusClass = (index) => {
     if (index - status < 1) return styles.done;

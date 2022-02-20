@@ -5,9 +5,9 @@ import lunch from "../data/lunch";
 const MenuItems = ({ menuItems }) => {
   return (
     <div className="py-10 bg-gray-50">
-      <div className="flex space-x-4 items-center justify-center font-semibold">
-        <p className="menuItem">Breakfast</p>
-        <p className="menuItem border-red-600">Lunch</p>
+      <div className="flex space-x-4 items-center justify-center font-semibold mb-5">
+        <p className="menuItem border-red-600">Breakfast</p>
+        <p className="menuItem ">Lunch</p>
         <p className="menuItem">Dinner</p>
       </div>
 
