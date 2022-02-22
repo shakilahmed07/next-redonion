@@ -113,7 +113,7 @@ const Order = ({ order }) => {
 // This gets only single called request
 export const getServerSideProps = async ({ params }) => {
   // Fetch data from external API
-  const res = await axios.get(`/api/orders/${params.id}`);
+  const res = await axios.get(`http://localhost:3000/api/orders/${params.id}`);
 
   // Pass data to the page via props
   return {

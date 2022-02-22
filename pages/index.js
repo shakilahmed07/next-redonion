@@ -17,7 +17,7 @@ export default function Home({ menuItems }) {
 // This gets all called on every request
 export const getServerSideProps = async () => {
   // Fetch data from external API
-  const res = await axios.get(`/api/products`);
+  const res = await axios.get(`http://localhost:3000/api/products`);
 
   // Pass data to the page via props
   return {
