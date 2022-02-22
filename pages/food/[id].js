@@ -121,9 +121,7 @@ const FoodDetails = ({ menuItem }) => {
 // This gets only single called request
 export const getServerSideProps = async ({ params }) => {
   // Fetch data from external API
-  const res = await axios.get(
-    `http://localhost:3000/api/products/${params.id}`
-  );
+  const res = await axios.get(`/api/products/${params.id}`);
 
   // Pass data to the page via props
   return {
