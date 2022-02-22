@@ -28,7 +28,10 @@ const Cart = () => {
   // order api
   const orderCreate = async (data) => {
     try {
-      const res = await axios.post("http://localhost:3000/api/orders", data);
+      const res = await axios.post(
+        "https://protected-ridge-45643.herokuapp.com/api/orders",
+        data
+      );
       if (res.status === 200) {
         dispatch(reset());
         router.push(`/orders/${res.data._id}`);

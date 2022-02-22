@@ -122,7 +122,7 @@ const FoodDetails = ({ menuItem }) => {
 export const getServerSideProps = async ({ params }) => {
   // Fetch data from external API
   const res = await axios.get(
-    `http://localhost:3000/api/products/${params.id}`
+    `https://protected-ridge-45643.herokuapp.com/api/products/${params.id}`
   );
 
   // Pass data to the page via props

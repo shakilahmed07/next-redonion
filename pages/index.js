@@ -17,7 +17,9 @@ export default function Home({ menuItems }) {
 // This gets all called on every request
 export const getServerSideProps = async () => {
   // Fetch data from external API
-  const res = await axios.get(`http://localhost:3000/api/products`);
+  const res = await axios.get(
+    `https://protected-ridge-45643.herokuapp.com/api/products`
+  );
 
   // Pass data to the page via props
   return {
