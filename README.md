@@ -2,7 +2,7 @@
 
 ## Live Site
 
-Preview : [REDONION]():
+Preview : [REDONION](https://redonion-restura.netlify.app/):
 
 ## Github Repository
 
@@ -22,7 +22,7 @@ Github Repo with Frontend + Backend : [Github](https://github.com/tanvir-shakil/
 - Redux
 - NextAuth
 - Yarn
-- Firebase & Heroku Hosting
+- Netlify & Heroku Hosting
 
 ## Features
 
