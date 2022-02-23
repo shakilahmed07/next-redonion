@@ -2,7 +2,7 @@
 
 ## Live Site
 
-Preview : [REDONION](https://redonion-restura.netlify.app/):
+Preview : [REDONION](https://next-redonion-ihpcdhizd-tanvirshakil777-gmailcom.vercel.app/):
 
 ## Github Repository
 
@@ -22,7 +22,7 @@ Github Repo with Frontend + Backend : [Github](https://github.com/tanvir-shakil/
 - Redux
 - NextAuth
 - Yarn
-- Netlify & Heroku Hosting
+- Vercel & Heroku Hosting
 
 ## Features
 
