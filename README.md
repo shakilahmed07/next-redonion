@@ -2,7 +2,7 @@
 
 ## Live Site
 
-Preview : [REDONION](https://next-redonion-ihpcdhizd-tanvirshakil777-gmailcom.vercel.app/):
+Preview : [REDONION](https://next-redonion.vercel.app/):
 
 ## Github Repository
 
