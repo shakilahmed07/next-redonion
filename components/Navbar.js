@@ -38,7 +38,7 @@ const Navbar = () => {
                 className="bg-red-500 px-6 py-1 rounded-full text-white"
                 onClick={(e) => {
                   e.preventDefault();
-                  signIn("github");
+                  signIn("google");
                 }}
               >
                 Sign in
