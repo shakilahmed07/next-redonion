@@ -109,13 +109,13 @@ const Cart = () => {
   }, []);
 
   return (
-    <div className="flex text-left justify-between p-14">
+    <div className="flex flex-col xl:flex-row xl:text-left xl:justify-between xl:p-14 pt-5">
       {/* left */}
 
-      <table className="table-auto w-9/12 mr-8">
+      <table className="xl:table-auto xl:w-9/12 xl:mr-8 mb-5">
         <thead>
-          <tr className="font-bold text-lg">
-            <th className="pl-8">Product</th>
+          <tr className="font-bold xl:text-lg text-sm">
+            <th className="xl:pl-8">Product</th>
             <th>Name</th>
             <th>Extras</th>
             <th>Price</th>
@@ -125,14 +125,12 @@ const Cart = () => {
         </thead>
         <tbody>
           {cart.products.map((product) => (
-            <tr key={product._id}>
+            <tr key={product._id} className="mb-5">
               <td>
-                <div>
-                  <img src={product.img} alt="" className="h-28 w-30" />
-                </div>
+              <img src={product.img} alt="" className="xl:h-28 h-[70px] xl:w-30" />
               </td>
               <td>
-                <span className="text-red-700 font-bold">{product.title}</span>
+                <span className="text-red-700 font-bold text-sm xl:text-xl">{product.title}</span>
               </td>
               <td>
                 {product.extras.map((extra) => (
@@ -156,8 +154,8 @@ const Cart = () => {
       </table>
 
       {/* Right */}
-      <div className="bg-gray-800 text-white px-14 py-9 w-3/12">
-        <div className="space-y-4 flex flex-col items-start justify-between">
+      <div className="bg-gray-800 text-white px-14 py-9 xl:w-3/12">
+        <div className="space-y-4 flex flex-col xl:items-start xl:justify-between justify-center">
           <b className="text-lg">CART TOTAL</b>
           <div>
             <b>Subtotal : </b> ${cart.total}

@@ -4,10 +4,10 @@ import { ChevronRightIcon } from "@heroicons/react/outline";
 const ServiceItem = ({ image, description, title, Icon }) => {
   return (
     <div className="flex flex-col items-center p-2">
-      <img src={image} alt={title} className="h-96 w-96" />
+      <img src={image} alt={title} className="h-[300px] xl:w-[200]" />
       {/* icon */}
-      <div className="flex py-5 px-5">
-        <div className="flex flex-col pl-4 space-y-1 items-start">
+      <div className="flex py-5">
+        <div className="flex flex-col space-y-1 items-start">
           <h3 className="font-semibold text-lg">{title}</h3>
           <p className="text-sm text-gray-500 max-w-sm">{description}</p>
           <div className="flex items-center space-y-1">

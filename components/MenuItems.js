@@ -12,7 +12,7 @@ const MenuItems = ({ menuItems }) => {
       </div>
 
       {/* Menu Item */}
-      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 mb-5 px-20">
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 mb-5 xl:px-20 px-4">
         {menuItems.map((item) => (
           <MenuItem
             id={item._id}

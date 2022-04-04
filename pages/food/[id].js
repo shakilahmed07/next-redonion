@@ -42,15 +42,15 @@ const FoodDetails = ({ menuItem }) => {
   };
 
   return (
-    <div className="h-screen px-20 grid grid-cols-2 gap-2">
-      <div className="space-y-8 max-w-xl items-center mt-20">
-        <h1 className="text-5xl font-semibold text-gray-800">
+    <div className="h-screen xl:px-20 px-5 grid grid-cols-2 xl:gap-2">
+      <div className="xl:space-y-8 space-y-4 max-w-xl items-center xl:mt-20 mt-10">
+        <h1 className="xl:text-5xl text-xl font-semibold text-gray-800">
           {menuItem.title}
         </h1>
-        <p className="text-sm max-w-md text-gray-500">{menuItem.desc}</p>
+        <p className="xl:text-sm text-xs xl:max-w-md text-gray-500">{menuItem.desc}</p>
         <p className="text-4xl font-semibold text-red-600">${price}</p>
         {/* choose size */}
-        <div>
+        <div className="space-y-2">
           <h3 className="text-lg font-semibold">Choose The Size</h3>
           <div className="flex space-x-4 mb-2">
             <div
@@ -73,9 +73,9 @@ const FoodDetails = ({ menuItem }) => {
             </div>
           </div>
           {/* additional */}
-          <div>
+          <div className="space-y-1">
             <h3 className="font-semibold">Choose Additional</h3>
-            <div className="flex space-x-4">
+            <div className="xl:flex xl:space-x-4">
               {menuItem.extraOptions.map((option) => (
                 <div key={option._id}>
                   <input
@@ -111,8 +111,8 @@ const FoodDetails = ({ menuItem }) => {
       </div>
 
       {/* Food image */}
-      <div className="items-center mt-10">
-        <img src={menuItem.img} alt="" className="h-[90%]" />
+      <div className="items-center mt-10 ml-4">
+        <img src={menuItem.img} alt="" className="xl:h-[90%]" />
       </div>
     </div>
   );

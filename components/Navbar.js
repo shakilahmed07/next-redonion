@@ -26,7 +26,7 @@ const Navbar = () => {
           <Link href="/cart" passHref>
             <div className="relative mt-2">
               <ShoppingCartIcon className="h-7 cursor-pointer" />
-              <span className="absolute flex justify-center items-center rounded-full bg-red-500 p-1 text-white text-sm -right-4 -top-3">
+              <span className="absolute flex justify-center items-center rounded-full bg-red-500 p-1 text-white text-sm -right-2 -top-3">
                 {quantity}
               </span>
             </div>

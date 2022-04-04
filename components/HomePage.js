@@ -9,7 +9,7 @@ export default function HomePage({ menuItems }) {
       <div
         className={`bg-header-banner bg-[#FCF4E0] h-[450px] bg-contain bg-center flex flex-col items-center justify-center bg-no-repeat`}
       >
-        <h1 className="font-semibold text-gray-600 text-xl -mt-10 lg:-mt-0 lg:text-5xl">
+        <h1 className="font-semibold text-gray-600 text-2xl -mt-10 lg:-mt-0 lg:text-5xl mb-5">
           Best Food Waiting For Your Belly
         </h1>
         <form className="mt-8 items-center">
